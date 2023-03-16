@@ -5,7 +5,7 @@ from dash import html
 # store the layout objects into a variable named layout
 layout = html.Div(
     [
-        html.H2('Welcome to our app!'),
+        html.H2('Welcome to UP Diliman Public Safety and Security Office (PSSO) Reporting System'),
         html.Hr(),
         html.Div(
             [

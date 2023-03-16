@@ -7,7 +7,9 @@ from dash.exceptions import PreventUpdate
 
 import webbrowser
 
-from apps import homes
+from app import app
+from apps import commonmodules as cm
+from apps import home
 from apps import report_filing as rf
 
 
@@ -48,7 +50,7 @@ def displaypage (pathname):
                 # If we are at the homepage, let us output 'home'
                 returnlayout = home.layout
             elif pathname == '/report_filing':
-                returnlayout = report_filing.layout
+                returnlayout = rf.layout
             else:
                 returnlayout = "error404"
         else:
@@ -60,4 +62,4 @@ def displaypage (pathname):
 
 if __name__ == '__main__':
     webbrowser.open('http://127.0.0.1:8050/', new=0, autoraise=True)
-    app.run_server(debug=False)
+    app.run_server(debug=True)
