@@ -12,7 +12,7 @@ app.css.config.serve_locally = True
 
 app.scripts.config.serve_locally = True
 
-app.title = 'THE BOOKSTORE'
+app.title = 'UP Diliman PSSO Reporting System'
 
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
