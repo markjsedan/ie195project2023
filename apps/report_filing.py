@@ -5,7 +5,7 @@ from dash import html
 # store the layout objects into a variable named layout
 layout = html.Div(
     [
-        html.H2('This will contain links to the GForms'),
+        html.H2('Select the '),
         html.Hr(),
         html.Div(
             [
