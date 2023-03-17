@@ -23,15 +23,17 @@ navbar = dbc.Navbar(
                     # dbc.Col(html.Img(src=THEBOOKSTORE_LOGO, height="70px")),
                     dbc.Col(dbc.NavbarBrand("UPD PSSO Reporting System", className="ms-2")),
                 ],
-                align="left",
+                align="center",
                 # className="g-0",
             ),
             href="/home",
             style={"textDecoration": "none", 'margin-left': '1.5em'}
         ),
+        dbc.NavLink("|", href="/", style={'margin-left': '5em', 'margin-right': '3em', 'color': 'white'}),
         dbc.NavLink("Home", href="/home", style={'margin-left': '5em', 'margin-right': '3em', 'color': 'white'}),
         dbc.NavLink("File a Report", href="/report_filing", style={'margin-right': '3em', 'color': 'white'}),
     ],
     dark=True,
+    # color="#014421"
     color="#7B1113",
 )
