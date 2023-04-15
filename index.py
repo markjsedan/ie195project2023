@@ -49,8 +49,8 @@ def displaypage (pathname):
             if pathname == '/' or pathname == '/home':
                 # If we are at the homepage, let us output 'home'
                 returnlayout = home.layout
-            elif pathname == '/report_filing':
-                returnlayout = rf.layout
+            # elif pathname == '/report_filing':
+                # returnlayout = rf.layout
             else:
                 returnlayout = "error404"
         else:
