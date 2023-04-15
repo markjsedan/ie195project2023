@@ -7,10 +7,6 @@ from dash.exceptions import PreventUpdate
 
 from app import app
 
-# THEBOOKSTORE_LOGO = "https://i.ibb.co/YRzTCN6/THE-BOOKSTORE-LOGO.png"
-
-
-# CSS Styling for the NavLink components
 navlink_style = {
     'color': '#fff'
 }

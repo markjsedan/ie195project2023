@@ -22,10 +22,8 @@ CONTENT_STYLE = {
 
 app.layout = html.Div(
     [
-        # Location Variable -- contains details about the url
         dcc.Location(id='url', refresh=True),
         cm.navbar,
-        # Page Content -- Div that contains page layout
         html.Div(id='page-content', style=CONTENT_STYLE),
     ]
 )
@@ -40,14 +38,11 @@ app.layout = html.Div(
 )
 
 def displaypage (pathname):
-    # determines what element triggerred the fxn
     ctx = dash.callback_context
     if ctx.triggered:
-        # name of the element that caused the trigger
         eventid = ctx.triggered[0]['prop_id'].split('.')[0]
         if eventid == 'url':
             if pathname == '/' or pathname == '/home':
-                # If we are at the homepage, let us output 'home'
                 returnlayout = home.layout
             # elif pathname == '/report_filing':
                 # returnlayout = rf.layout

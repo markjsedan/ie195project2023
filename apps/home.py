@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 from app import app
 
-# store the layout objects into a variable named layout
+
 layout = html.Div(
     [
         html.Div(
