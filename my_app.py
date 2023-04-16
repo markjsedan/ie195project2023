@@ -2,9 +2,7 @@ import dash
 from dash import dcc
 from dash import html
 import dash_bootstrap_components as dbc
-import logging
-import tkinter as tk  
-from tkinter import ttk  
+import logging 
 from flask import Flask, send_from_directory
 
 
