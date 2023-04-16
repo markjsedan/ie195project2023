@@ -7,6 +7,7 @@ import tkinter as tk
 from tkinter import ttk  
 from flask import Flask, send_from_directory
 
+
 server = Flask(__name__, static_folder='static')
 app = dash.Dash(__name__, external_stylesheets=["assets/bootstrap.css"])
 

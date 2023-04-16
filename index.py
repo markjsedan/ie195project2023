@@ -20,6 +20,7 @@ CONTENT_STYLE = {
     "padding": "1em 1em",
 }
 
+server = app.server
 app.layout = html.Div(
     [
         dcc.Location(id='url', refresh=True),
