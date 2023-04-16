@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 import webbrowser
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
-from app import app
+from my_app import app
 
 
 layout = html.Div(
