@@ -7,7 +7,7 @@ from dash.exceptions import PreventUpdate
 
 import webbrowser
 
-from my_app import app
+from app import app
 from apps import commonmodules as cm
 from apps import home
 from apps import report_filing as rf
