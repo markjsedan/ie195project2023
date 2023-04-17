@@ -5,7 +5,7 @@ import dash
 from dash.exceptions import PreventUpdate
 
 
-from my_app import app
+from app import app
 
 navlink_style = {
     'color': '#fff'
